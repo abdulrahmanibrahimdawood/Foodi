@@ -1,27 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:foodi_app/core/constants/assets.dart';
-import 'package:foodi_app/core/utils/widgets/custom_button.dart';
+import 'package:foodi_app/core/constants/constants.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text_form_feild.dart';
+import 'package:foodi_app/features/auth/widgets/custom_button.dart';
 
 class SigninViewBody extends StatelessWidget {
-  const SigninViewBody({
-    super.key,
-    required this.formKey,
-    required this.emailController,
-    required this.passwordController,
-  });
-
-  final GlobalKey<FormState> formKey;
-  final TextEditingController emailController;
-  final TextEditingController passwordController;
+  const SigninViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController emailController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     return Center(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        padding: const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
         child: Form(
           key: formKey,
           child: Column(
@@ -49,10 +44,11 @@ class SigninViewBody extends StatelessWidget {
                 obscureText: true,
               ),
               SizedBox(height: 32),
-              CustomButton(
+              CustomAuthButton(
+                text: 'Sign in',
                 onTap: () {
                   if (formKey.currentState!.validate()) {
-                    print('Login');
+                    print('Sign in');
                   }
                 },
               ),
