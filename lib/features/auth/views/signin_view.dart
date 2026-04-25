@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'package:foodi_app/core/constants/app_colors.dart';
+import 'package:foodi_app/features/auth/widgets/signin_view_body.dart';
+
+class SigninView extends StatelessWidget {
+  const SigninView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    TextEditingController emailController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
+      child: Scaffold(
+        backgroundColor: AppColors.primaryColor,
+        body: SigninViewBody(
+          formKey: formKey,
+          emailController: emailController,
+          passwordController: passwordController,
+        ),
+      ),
+    );
+  }
+}
