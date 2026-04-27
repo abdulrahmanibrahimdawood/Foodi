@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:foodi_app/core/constants/constants.dart';
-import 'package:foodi_app/features/home/widgets/custom_search_text_feild.dart';
-import 'package:foodi_app/features/home/widgets/custom_sliver_grid.dart';
-import 'package:foodi_app/features/home/widgets/food_categories.dart';
-import 'package:foodi_app/features/home/widgets/home_view_header.dart';
+import 'package:foodi_app/features/home/presentation/widgets/custom_search_text_feild.dart';
+import 'package:foodi_app/features/home/presentation/widgets/custom_sliver_grid.dart';
+import 'package:foodi_app/features/home/presentation/widgets/food_categories.dart';
+import 'package:foodi_app/features/home/presentation/widgets/home_view_header.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});

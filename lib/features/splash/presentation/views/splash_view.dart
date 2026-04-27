@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:foodi_app/core/constants/app_colors.dart';
 import 'package:foodi_app/core/constants/assets.dart';
-import 'package:foodi_app/features/auth/views/signin_view.dart';
+import 'package:foodi_app/features/auth/presentation/views/signin_view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

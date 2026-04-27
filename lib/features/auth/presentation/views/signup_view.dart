@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodi_app/core/constants/app_colors.dart';
-import 'package:foodi_app/features/auth/widgets/signup_view_body.dart';
+import 'package:foodi_app/features/auth/presentation/widgets/signup_view_body.dart';
 
 class SignupView extends StatelessWidget {
   const SignupView({super.key});

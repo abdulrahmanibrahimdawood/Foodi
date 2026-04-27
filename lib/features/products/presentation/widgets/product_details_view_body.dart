@@ -4,9 +4,9 @@ import 'package:foodi_app/core/constants/assets.dart';
 import 'package:foodi_app/core/constants/constants.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text.dart';
 import 'package:foodi_app/features/products/data/models/addations_model.dart';
-import 'package:foodi_app/features/products/widgets/addations_card.dart';
-import 'package:foodi_app/features/products/widgets/custom_button.dart';
-import 'package:foodi_app/features/products/widgets/spicy_slider.dart';
+import 'package:foodi_app/features/products/presentation/widgets/addations_card.dart';
+import 'package:foodi_app/features/products/presentation/widgets/custom_button.dart';
+import 'package:foodi_app/features/products/presentation/widgets/spicy_slider.dart';
 
 class ProductDetailsViewBody extends StatefulWidget {
   const ProductDetailsViewBody({super.key});

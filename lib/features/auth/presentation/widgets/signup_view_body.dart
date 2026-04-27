@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:foodi_app/core/constants/assets.dart';
 import 'package:foodi_app/core/constants/constants.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text_form_feild.dart';
-import 'package:foodi_app/features/auth/widgets/custom_button.dart';
+import 'package:foodi_app/features/auth/presentation/widgets/custom_button.dart';
 
 class SignupViewBody extends StatelessWidget {
   const SignupViewBody({super.key});

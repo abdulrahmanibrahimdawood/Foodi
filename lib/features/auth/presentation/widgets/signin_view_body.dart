@@ -4,7 +4,7 @@ import 'package:foodi_app/core/constants/assets.dart';
 import 'package:foodi_app/core/constants/constants.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text_form_feild.dart';
-import 'package:foodi_app/features/auth/widgets/custom_button.dart';
+import 'package:foodi_app/features/auth/presentation/widgets/custom_button.dart';
 
 class SigninViewBody extends StatelessWidget {
   const SigninViewBody({super.key});

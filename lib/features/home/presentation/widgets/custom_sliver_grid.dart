@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodi_app/core/constants/assets.dart';
-import 'package:foodi_app/features/home/widgets/card_item.dart';
-import 'package:foodi_app/features/products/views/product_details_view.dart';
+import 'package:foodi_app/features/home/presentation/widgets/card_item.dart';
+import 'package:foodi_app/features/products/presentation/views/product_details_view.dart';
 
 class CustomSliverGrid extends StatelessWidget {
   const CustomSliverGrid({super.key});

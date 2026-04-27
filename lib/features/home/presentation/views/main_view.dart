@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:foodi_app/core/constants/app_colors.dart';
-import 'package:foodi_app/features/auth/views/profile_view.dart';
-import 'package:foodi_app/features/cart/views/cart_view.dart';
-import 'package:foodi_app/features/home/views/home_view.dart';
-import 'package:foodi_app/features/order_history/views/order_history_view.dart';
+import 'package:foodi_app/features/auth/presentation/views/profile_view.dart';
+import 'package:foodi_app/features/cart/presentation/views/cart_view.dart';
+import 'package:foodi_app/features/home/presentation/views/home_view.dart';
+import 'package:foodi_app/features/order_history/presentation/views/order_history_view.dart';
 
 class MainView extends StatefulWidget {
   const MainView({super.key});

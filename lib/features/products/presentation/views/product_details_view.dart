@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodi_app/features/products/widgets/product_details_view_body.dart';
+import 'package:foodi_app/features/products/presentation/widgets/product_details_view_body.dart';
 
 class ProductDetailsView extends StatelessWidget {
   const ProductDetailsView({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodi_app/features/home/widgets/home_view_body.dart';
+import 'package:foodi_app/features/home/presentation/widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

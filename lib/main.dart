@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodi_app/features/home/views/main_view.dart';
+import 'package:foodi_app/features/home/presentation/views/main_view.dart';
 
 void main() {
   runApp(const MyApp());
