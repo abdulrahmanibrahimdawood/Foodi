@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodi_app/core/constants/assets.dart';
 import 'package:foodi_app/features/home/widgets/card_item.dart';
+import 'package:foodi_app/features/products/views/product_details_view.dart';
 
 class CustomSliverGrid extends StatelessWidget {
   const CustomSliverGrid({super.key});
@@ -9,11 +10,21 @@ class CustomSliverGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverGrid(
       delegate: SliverChildBuilderDelegate((context, index) {
-        return CardItem(
-          rate: '4.9',
-          image: Assets.imagesBurger1,
-          text: 'Cheeseburger',
-          description: "Wendy's Burger",
+        return GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const ProductDetailsView(),
+              ),
+            );
+          },
+          child: CardItem(
+            rate: '4.9',
+            image: Assets.imagesBurger1,
+            text: 'Cheeseburger',
+            description: "Wendy's Burger",
+          ),
         );
       }, childCount: 9),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

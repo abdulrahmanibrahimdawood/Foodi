@@ -26,8 +26,16 @@ class Assets {
   /// assets/images/profile.png
   static const String imagesProfile = "assets/images/profile.png";
 
+  /// Assets for imagesSandawitchDetails
+  /// assets/images/sandawitch_details.png
+  static const String imagesSandawitchDetails = "assets/images/sandawitch_details.png";
+
   /// Assets for imagesSplash
   /// assets/images/Splash.png
   static const String imagesSplash = "assets/images/Splash.png";
+
+  /// Assets for imagesTomato
+  /// assets/images/tomato.png
+  static const String imagesTomato = "assets/images/tomato.png";
 }
 
