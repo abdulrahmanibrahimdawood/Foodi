@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:foodi_app/features/home/widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
+      child: const Scaffold(body: HomeViewBody()),
+    );
   }
 }
