@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foodi_app/core/constants/constants.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text.dart';
 import 'package:foodi_app/features/cart/presentation/widgets/cart_view_body.dart';
+import 'package:foodi_app/features/checkout/presentation/views/checkout_view.dart';
 import 'package:foodi_app/features/products/presentation/widgets/custom_button.dart';
 
 class CartView extends StatelessWidget {
@@ -45,7 +46,15 @@ class CartView extends StatelessWidget {
                 ),
               ],
             ),
-            CustomButton(text: 'Checkout', onTap: () {}),
+            CustomButton(
+              text: 'Checkout',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const CheckoutView()),
+                );
+              },
+            ),
           ],
         ),
       ),
