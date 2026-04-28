@@ -12,7 +12,13 @@ class CartViewBody extends StatefulWidget {
 }
 
 class _CartViewBodyState extends State<CartViewBody> {
-  int count = 1;
+  final int itemCount = 20;
+  late List<int> quantities;
+  @override
+  void initState() {
+    quantities = List.generate(itemCount, (index) => 1);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,38 +31,37 @@ class _CartViewBodyState extends State<CartViewBody> {
             vertical: kVerticalPadding,
           ),
           sliver: SliverList(
-            delegate: SliverChildListDelegate([
-              Column(
-                children: List.generate(
-                  4,
-                  (context) => Padding(
-                    padding: const EdgeInsets.only(bottom: 8.0),
-                    child: CartItem(
-                      title: 'Sandwich',
-                      desc: 'Veggie Burger',
-                      image: Assets.imagesCartItem,
-                      count: count,
-                      onAdd: () {
-                        setState(() {
-                          count++;
-                        });
-                      },
-                      onMinus: () {
-                        setState(() {
-                          if (count > 1) count--;
-                        });
-                      },
-                      onRemove: () {
-                        setState(() {
-                          count = 0;
-                        });
-                      },
-                    ),
-                  ),
+            delegate: SliverChildBuilderDelegate((context, index) {
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 8.0),
+                child: CartItem(
+                  title: 'Sandwich',
+                  desc: 'Veggie Burger',
+                  image: Assets.imagesCartItem,
+                  count: quantities[index],
+
+                  onAdd: () {
+                    setState(() {
+                      quantities[index]++;
+                    });
+                  },
+
+                  onMinus: () {
+                    setState(() {
+                      if (quantities[index] > 1) {
+                        quantities[index]--;
+                      }
+                    });
+                  },
+
+                  onRemove: () {
+                    setState(() {
+                      quantities.removeAt(index);
+                    });
+                  },
                 ),
-              ),
-              const SizedBox(height: 16),
-            ]),
+              );
+            }, childCount: quantities.length),
           ),
         ),
       ],

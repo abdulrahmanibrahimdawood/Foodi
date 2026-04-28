@@ -16,7 +16,13 @@ class CartView extends StatelessWidget {
           horizontal: kHorizontalPadding,
           vertical: kVerticalPadding / 2,
         ),
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(12),
+            topRight: Radius.circular(12),
+          ),
+          color: Colors.transparent,
+        ),
         height: 92,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
