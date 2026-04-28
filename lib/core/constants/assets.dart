@@ -30,6 +30,10 @@ class Assets {
   /// assets/images/coleslaw.png
   static const String imagesColeslaw = "assets/images/coleslaw.png";
 
+  /// Assets for imagesDollar
+  /// assets/images/dollar.png
+  static const String imagesDollar = "assets/images/dollar.png";
+
   /// Assets for imagesFries
   /// assets/images/fries.png
   static const String imagesFries = "assets/images/fries.png";
@@ -69,5 +73,9 @@ class Assets {
   /// Assets for imagesTomato
   /// assets/images/tomato.png
   static const String imagesTomato = "assets/images/tomato.png";
+
+  /// Assets for imagesVisa
+  /// assets/images/visa.png
+  static const String imagesVisa = "assets/images/visa.png";
 }
 
