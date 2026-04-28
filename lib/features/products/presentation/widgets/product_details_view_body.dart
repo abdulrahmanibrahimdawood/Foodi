@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:foodi_app/core/constants/app_colors.dart';
 import 'package:foodi_app/core/constants/assets.dart';
 import 'package:foodi_app/core/constants/constants.dart';
+import 'package:foodi_app/core/utils/widgets/custom_sliver_appbar.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text.dart';
 import 'package:foodi_app/features/products/data/models/addations_model.dart';
 import 'package:foodi_app/features/products/presentation/widgets/addations_card.dart';
@@ -22,20 +22,7 @@ class _ProductDetailsViewBodyState extends State<ProductDetailsViewBody> {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        SliverAppBar(
-          title: CustomText(
-            text: 'Sandwich Details',
-            color: AppColors.primaryColor,
-            fontSize: 22,
-            fontWeight: FontWeight.w800,
-          ),
-          pinned: true,
-          expandedHeight: 64,
-          collapsedHeight: 64,
-          elevation: 0,
-          scrolledUnderElevation: 0,
-          surfaceTintColor: Colors.transparent,
-        ),
+        CustomSliverAppBar(title: 'Sandwich Details'),
 
         SliverPadding(
           padding: const EdgeInsets.symmetric(
