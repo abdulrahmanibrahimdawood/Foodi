@@ -5,7 +5,6 @@ import 'package:foodi_app/core/utils/widgets/custom_sliver_appbar.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text.dart';
 import 'package:foodi_app/features/products/data/models/addations_model.dart';
 import 'package:foodi_app/features/products/presentation/widgets/addations_card.dart';
-import 'package:foodi_app/features/products/presentation/widgets/custom_button.dart';
 import 'package:foodi_app/features/products/presentation/widgets/spicy_slider.dart';
 
 class ProductDetailsViewBody extends StatefulWidget {
@@ -127,34 +126,7 @@ class _ProductDetailsViewBodyState extends State<ProductDetailsViewBody> {
                   ),
                 ),
               ),
-
               const SizedBox(height: 24),
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CustomText(
-                        text: 'Total',
-                        color: const Color(0xFF3C2F2F),
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      const SizedBox(height: 4),
-                      CustomText(
-                        text: '\$18.19',
-                        color: const Color(0xFF3C2F2F),
-                        fontSize: 32,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ],
-                  ),
-                  CustomButton(text: 'Add To Cart', onTap: () {}),
-                ],
-              ),
-              const SizedBox(height: 16),
             ]),
           ),
         ),

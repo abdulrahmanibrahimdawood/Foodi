@@ -33,6 +33,13 @@ class CheckoutView extends StatelessWidget {
           vertical: kVerticalPadding,
         ),
         decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.primaryColor.withValues(alpha: .15),
+              blurRadius: 12,
+              offset: const Offset(0, -6),
+            ),
+          ],
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(12),
             topRight: Radius.circular(12),

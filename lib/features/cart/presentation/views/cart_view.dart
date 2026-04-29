@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodi_app/core/constants/app_colors.dart';
 import 'package:foodi_app/core/constants/constants.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text.dart';
 import 'package:foodi_app/features/cart/presentation/widgets/cart_view_body.dart';
@@ -18,6 +19,13 @@ class CartView extends StatelessWidget {
           vertical: kVerticalPadding / 2,
         ),
         decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.primaryColor.withValues(alpha: .15),
+              blurRadius: 12,
+              offset: const Offset(0, -6),
+            ),
+          ],
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(12),
             topRight: Radius.circular(12),
