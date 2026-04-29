@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodi_app/features/home/presentation/views/main_view.dart';
+import 'package:foodi_app/features/splash/presentation/views/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const MainView(),
+      home: const SplashView(),
     );
   }
 }
