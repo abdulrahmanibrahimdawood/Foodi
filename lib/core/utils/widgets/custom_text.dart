@@ -7,11 +7,13 @@ class CustomText extends StatelessWidget {
     this.color,
     this.fontSize,
     this.fontWeight,
+    this.isUnderline = false,
   });
   final String text;
   final Color? color;
   final double? fontSize;
   final FontWeight? fontWeight;
+  final bool isUnderline;
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +21,8 @@ class CustomText extends StatelessWidget {
       textAlign: TextAlign.center,
       text,
       style: TextStyle(
+        decoration: isUnderline ? TextDecoration.underline : null,
+        decorationColor: Colors.white,
         color: color,
         fontSize: fontSize,
         fontWeight: fontWeight,

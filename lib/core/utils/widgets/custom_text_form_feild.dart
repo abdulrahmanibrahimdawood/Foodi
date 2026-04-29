@@ -55,14 +55,15 @@ class _CustomTextFormFeildState extends State<CustomTextFormFeild> {
                 },
                 icon: Icon(
                   _isObscure ? CupertinoIcons.eye_slash : CupertinoIcons.eye,
+                  color: Colors.white,
                 ),
               )
             : null,
         prefixIcon: widget.prefixIcon,
         filled: true,
-        fillColor: Colors.white,
+        fillColor: Colors.transparent,
         hintText: widget.hintText,
-        hintStyle: const TextStyle(color: Colors.black),
+        hintStyle: const TextStyle(color: Colors.white),
         enabledBorder: outlineInputBorder(),
         border: outlineInputBorder(),
         focusedBorder: outlineInputBorder(),

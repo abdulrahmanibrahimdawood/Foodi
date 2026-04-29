@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:foodi_app/core/constants/app_colors.dart';
+import 'package:foodi_app/core/constants/constants.dart';
 import 'package:foodi_app/core/utils/widgets/custom_text.dart';
 
 class CardItem extends StatelessWidget {
@@ -15,7 +16,10 @@ class CardItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 16),
+      padding: EdgeInsets.symmetric(
+        horizontal: kHorizontalPadding,
+        vertical: kVerticalPadding / 2,
+      ),
       width: 200,
       decoration: ShapeDecoration(
         color: Colors.white,
@@ -30,9 +34,10 @@ class CardItem extends StatelessWidget {
         ],
       ),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset(image, height: 200, width: 180),
+          Image.asset(image, height: 180, width: 160),
           CustomText(text: text, fontSize: 16, fontWeight: FontWeight.w600),
           CustomText(
             text: description,
@@ -40,7 +45,7 @@ class CardItem extends StatelessWidget {
             color: AppColors.primaryColor,
             fontWeight: FontWeight.w500,
           ),
-          SizedBox(height: 8),
+          SizedBox(height: 16),
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -51,7 +56,6 @@ class CardItem extends StatelessWidget {
               Icon(CupertinoIcons.heart, color: AppColors.primaryColor),
             ],
           ),
-          SizedBox(height: 8),
         ],
       ),
     );
