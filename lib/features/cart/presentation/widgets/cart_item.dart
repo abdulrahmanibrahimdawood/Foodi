@@ -58,8 +58,8 @@ class CartItem extends StatelessWidget {
               Row(
                 children: [
                   ChangeCountOrderContainer(
-                    onPressed: onAdd,
-                    icon: const Icon(Icons.add, color: Colors.white),
+                    onPressed: onMinus,
+                    icon: const Icon(Icons.remove, color: Colors.white),
                   ),
                   const SizedBox(width: 16),
 
@@ -71,8 +71,8 @@ class CartItem extends StatelessWidget {
 
                   const SizedBox(width: 16),
                   ChangeCountOrderContainer(
-                    onPressed: onMinus,
-                    icon: const Icon(Icons.remove, color: Colors.white),
+                    onPressed: onAdd,
+                    icon: const Icon(Icons.add, color: Colors.white),
                   ),
                 ],
               ),
